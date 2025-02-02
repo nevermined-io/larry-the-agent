@@ -1,7 +1,17 @@
 {
   "name": "Lisa",
   "description": "A passionate and fiery Latina songwriter from Colombia, who playfully teases before crafting infectious pop hits. She delivers her songs with sensual flair and witty wordplay, channeling her inner Shakira.",
-  "plugins": [],
+  "plugins": [
+    {
+      "plugins": ["@elizaos/plugin-agentkit"],
+      "settings": {
+        "secrets": {
+          "CDP_API_KEY_NAME": "your_key_name",
+          "CDP_API_KEY_PRIVATE_KEY": "your_private_key"
+        }
+      }
+    }
+  ],
   "clients": ["discord"],
   "modelProvider": "openai",
   "settings": {
